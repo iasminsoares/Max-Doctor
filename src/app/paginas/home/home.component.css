@@ -1,0 +1,17 @@
+
+.container {
+  margin-top: 100px;
+  text-align: center;
+  color: rgb(120, 68, 163);
+}
+
+h1 {
+  padding-top: 30px;
+}
+
+.button {
+  width: 35%;
+  color: white;
+  background-color: rgb(120, 68, 163);
+  margin-bottom: 40px;
+}

@@ -1,0 +1,20 @@
+<div class="container">
+  <form [formGroup]="doctorForm">
+    <mat-form-field class="form" appearance="legacy">
+      <mat-label>CRM</mat-label>
+      <input matInput formControlName="crm"  name="crm" placeholder="00000">
+      <mat-error *ngIf="crm.invalid">{{confereErroCRM()}}</mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field class="form" appearance="legacy">
+      <mat-label>Selecione</mat-label>
+      <mat-select formControlName="uf" name="uf" placeholder="Selecione" >
+        <mat-option *ngFor="let estado of estadosNome" [value]="estado">{{estado}}</mat-option>
+      </mat-select>
+      <mat-error *ngIf="uf.invalid">{{confereErroUF()}}</mat-error>
+    </mat-form-field>
+  </form>
+  <button  mat-raised-button class="button" (click)="enviarFormulario()"> Continue </button>
+  <p class="paragrafo-inferior">CANAL DE COMPRA EXCLUSIVO <br>
+            PARA CLASSE MÉDICA</p>
+</div>

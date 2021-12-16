@@ -1,0 +1,25 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(120, 68, 163);
+}
+.paragrafo-inferior{
+  font-weight: normal;
+  margin-top: 8px;
+  text-align: center;
+  color: rgb(120, 68, 163);
+  }
+
+.button {
+  width: 30%;
+  margin-top: 15px;
+  color: white;
+  background-color: rgb(130, 101, 153);
+}
+
+.form {
+  width: 325px;
+
+}
